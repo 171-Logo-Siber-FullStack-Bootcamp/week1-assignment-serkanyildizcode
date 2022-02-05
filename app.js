@@ -4,8 +4,9 @@ const element = document.getElementById("getData");
     xhr.send();
     xhr.onreadystatechange = function () {
       if (this.readyState === 4) {
-        if ((this.status == 200) && (this.status < 300)) {
-          console.log(this.responseText)        
+        if ((this.status == 200)) {
+          console.log(this.responseText)   
+               
         }
       }
     }
