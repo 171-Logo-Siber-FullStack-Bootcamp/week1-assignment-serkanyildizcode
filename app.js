@@ -5,8 +5,7 @@ const element = document.getElementById("getData");
     xhr.onreadystatechange = function () {
       if (this.readyState === 4) {
         if ((this.status == 200) && (this.status < 300)) {
-          console.log(this.responseText)
-         
+          console.log(this.responseText)        
         }
       }
     }
